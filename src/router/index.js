@@ -9,11 +9,11 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: ProtectRoute,
+   
     children: [
       {
         name: 'Home',
-        path: '',
+        path: '/home',
         component: () => import('../views/HomeView.vue'), // مكون Checkout
       },
     ],
@@ -21,7 +21,7 @@ const routes = [
   {
     path: '/product',
     name: 'product',
-    component: ProtectRoute,
+
     children: [
       {
         name: 'product',
@@ -33,7 +33,7 @@ const routes = [
   {
     path: '/checkout',
     name: 'heckout',
-    component: ProtectRoute,
+
     children: [
       {
         path: '',
@@ -61,7 +61,7 @@ const routes = [
   {
     path: '/cartpage',
     name: 'cartpage',
-    component: ProtectRoute,
+
     children: [
       {
         name: 'cartpage',
@@ -88,7 +88,7 @@ const routes = [
   {
     path: '/blog',
     name: 'Blog',
-    component: ProtectRoute,
+
     children: [
       {
         path: '',
@@ -100,7 +100,7 @@ const routes = [
   {
     path: '/product/:id',
     name: 'ProductDetails',
-    component: ProtectRoute,
+
     children: [
       {
         path: '',
@@ -112,7 +112,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: ProtectRoute,
+
     children: [
       {
         path: '',
